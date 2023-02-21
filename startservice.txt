@@ -1,0 +1,11 @@
+[reload]
+sudo systemctl daemon-reload
+
+
+[start service]
+sudo systemctl start <service_name>.service
+
+
+[automatic boot]
+sudo systemctl enable <service_name>.service
+

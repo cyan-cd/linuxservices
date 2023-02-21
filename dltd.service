@@ -1,0 +1,11 @@
+[Unit]
+Description=This is DLT-deamon
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/dlt-daemon -p 3500
+
+
+[Install]
+WantedBy=multi-user.target
+RequiredBy=network.target
